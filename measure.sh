@@ -10,6 +10,8 @@ run_and_measure() {
   echo "-------------------"
   if [ -d "./dist" ]; then
     du -sh ./dist
+  elif [ -d "./dist-tsup" ]; then
+    du -sh ./dist-tsup
   else
     echo "Warning: ./dist directory not found"
   fi
